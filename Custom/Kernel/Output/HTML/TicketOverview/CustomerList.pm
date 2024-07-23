@@ -4,7 +4,7 @@
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
 # Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - cfed3c5e056090fe945e87966a18e2f08320a05a - Kernel/Output/HTML/TicketOverview/CustomerList.pm
+# $origin: otobo - 4dade81e7e04433cb2aed36af0c8727d822a1c61 - Kernel/Output/HTML/TicketOverview/CustomerList.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -22,8 +22,8 @@ use strict;
 use warnings;
 
 use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language qw(Translatable);
-use Digest::MD5 qw(md5_hex);
+use Kernel::Language              qw(Translatable);
+use Digest::MD5                   qw(md5_hex);
 
 our @ObjectDependencies = (
     'Kernel::System::CommunicationChannel',
@@ -63,11 +63,10 @@ sub Run {
     }
 
     # get needed object
-    my $ConfigObject               = $Kernel::OM->Get('Kernel::Config');
-    my $LayoutObject               = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
-    my $TicketObject               = $Kernel::OM->Get('Kernel::System::Ticket');
-    my $ArticleObject              = $Kernel::OM->Get('Kernel::System::Ticket::Article');
-    my $CommunicationChannelObject = $Kernel::OM->Get('Kernel::System::CommunicationChannel');
+    my $ConfigObject  = $Kernel::OM->Get('Kernel::Config');
+    my $LayoutObject  = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
+    my $TicketObject  = $Kernel::OM->Get('Kernel::System::Ticket');
+    my $ArticleObject = $Kernel::OM->Get('Kernel::System::Ticket::Article');
 
     # generate empty message
     if ( scalar @{ $Param{TicketIDs} } == 0 ) {
@@ -126,21 +125,16 @@ sub Run {
         );
 
         my $Subject;
-        my $ConfigObject          = $Kernel::OM->Get('Kernel::Config');
+
+        # TODO: get config oútside the loop
         my $SmallViewColumnHeader = $ConfigObject->Get('Ticket::Frontend::CustomerTicketOverview')->{ColumnHeader};
 
         # Check if the last customer subject or ticket title should be shown.
-        # If ticket title should be shown, check if there are articles, because ticket title
-        # could be related with a subject of an article which does not visible for customer (see bug#13614).
-        # If there is no subject, set to 'Untitled'.
         if ( $SmallViewColumnHeader eq 'LastCustomerSubject' ) {
             $Subject = $Article{Subject} || '';
         }
-        elsif ( $SmallViewColumnHeader eq 'TicketTitle' && $ArticleList[0] ) {
-            $Subject = $Ticket{Title};
-        }
         else {
-            $Subject = Translatable('Untitled!');
+            $Subject = $Ticket{Title};
         }
 
         # Condense down the subject.

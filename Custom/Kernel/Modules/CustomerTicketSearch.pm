@@ -4,7 +4,7 @@
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
 # Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - cfed3c5e056090fe945e87966a18e2f08320a05a - Kernel/Modules/CustomerTicketSearch.pm
+# $origin: otobo - 4dade81e7e04433cb2aed36af0c8727d822a1c61 - Kernel/Modules/CustomerTicketSearch.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -22,7 +22,7 @@ use strict;
 use warnings;
 
 use Kernel::System::VariableCheck qw(:all);
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 
 our $ObjectManagerDisabled = 1;
 
@@ -38,8 +38,6 @@ sub new {
 
 sub Run {
     my ( $Self, %Param ) = @_;
-
-    my $Output;
 
     # get needed objects
     my $ParamObject  = $Kernel::OM->Get('Kernel::System::Web::Request');
@@ -207,13 +205,13 @@ sub Run {
 
     # get time option
     if ( !$GetParam{TimeSearchType} ) {
-        $GetParam{'TimeSearchType::None'} = 'checked="checked"';
+        $GetParam{'TimeSearchType::None'} = 'checked ';
     }
     elsif ( $GetParam{TimeSearchType} eq 'TimePoint' ) {
-        $GetParam{'TimeSearchType::TimePoint'} = 'checked="checked"';
+        $GetParam{'TimeSearchType::TimePoint'} = 'checked ';
     }
     elsif ( $GetParam{TimeSearchType} eq 'TimeSlot' ) {
-        $GetParam{'TimeSearchType::TimeSlot'} = 'checked="checked"';
+        $GetParam{'TimeSearchType::TimeSlot'} = 'checked ';
     }
 
     # set result form env
@@ -1744,13 +1742,14 @@ sub MaskForm {
     }
 
     $Param{ServicesStrg} = $LayoutObject->BuildSelection(
-        Data       => \%ServiceList,
-        Name       => 'ServiceIDs',
-        Multiple   => 1,
-        Size       => 5,
-        SelectedID => $Param{ServiceIDs},
-        TreeView   => $TreeView,
-        Class      => 'Modernize',
+        Data        => \%ServiceList,
+        Name        => 'ServiceIDs',
+        Multiple    => 1,
+        Size        => 5,
+        SelectedID  => $Param{ServiceIDs},
+        TreeView    => $TreeView,
+        Class       => 'Modernize',
+        Translation => $TreeView,
     );
     $Param{TypesStrg} = $LayoutObject->BuildSelection(
         Data => {
@@ -1758,12 +1757,13 @@ sub MaskForm {
                 UserID => $Self->{UserID},
             ),
         },
-        Name       => 'TypeIDs',
-        SelectedID => $Param{TypeIDs},
-        Multiple   => 1,
-        Size       => 5,
-        SelectedID => $Param{TypeIDs},
-        Class      => 'Modernize',
+        Name        => 'TypeIDs',
+        SelectedID  => $Param{TypeIDs},
+        Multiple    => 1,
+        Size        => 5,
+        SelectedID  => $Param{TypeIDs},
+        Class       => 'Modernize',
+        Translation => 1,
     );
     $Param{StatesStrg} = $LayoutObject->BuildSelection(
         Data => {
