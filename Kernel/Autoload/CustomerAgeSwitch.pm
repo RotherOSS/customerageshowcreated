@@ -75,6 +75,7 @@ our @ObjectDependencies = (
                     return $Self->{LanguageObject}->FormatTimeString(
                         $CreatedAt,
                         'DateFormat',
+                        'NoSeconds',
                     );
                 }
             }
