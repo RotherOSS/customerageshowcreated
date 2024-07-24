@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# This file is distributed under the same license as the OTOBO
+# CustomerAgeShowCreated Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OTOBO CustomerAgeShowCreated Guide rel-10.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-24 03:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../content/index.rst:16
+msgid "Sacrifice to Sphinx"
+msgstr ""
+
+#: ../../content/index.rst:19
+msgid "Description"
+msgstr ""
+
+#: ../../content/index.rst:20
+msgid ""
+"The package CustomerAgeShowCreated allows to switch between Age and "
+"Created date in customer ticket lists via system configuration."
+msgstr ""
+
+#: ../../content/index.rst:23
+msgid "System requirements"
+msgstr ""
+
+#: ../../content/index.rst:26
+msgid "Framework"
+msgstr ""
+
+#: ../../content/index.rst:27
+msgid "OTOBO 10.1.x"
+msgstr ""
+
+#: ../../content/index.rst:30
+msgid "Packages"
+msgstr ""
+
+#: ../../content/index.rst:31 ../../content/index.rst:35
+msgid "\\-"
+msgstr ""
+
+#: ../../content/index.rst:34
+msgid "Third-party software"
+msgstr ""
+
+#: ../../content/index.rst:38
+msgid "Usage"
+msgstr ""
+
+#: ../../content/index.rst:39
+msgid ""
+"When an age treshold value is configured in the system configuration "
+"setting TimeShowCreatedAt, no further action is required. Affected places"
+" in the customer frontend are all ticket overviews, the ticket search as "
+"well as the Elasticsearch quick result popup."
+msgstr ""
+
+#: ../../content/index.rst:42
+msgid "Setup"
+msgstr ""
+
+#: ../../content/index.rst:43
+msgid ""
+"The system configuration setting TimeShowCreatedAt can be set to one of "
+"three values (1 day, 2 days, 7 days). The value represents a treshold "
+"age. For example, if the value is set to 1 day and the age of a ticket is"
+" above 1 day, then the age is shown as absolute date instead of time "
+"period."
+msgstr ""
+
+#: ../../content/index.rst:46
+msgid "Configuration Reference"
+msgstr ""
+
+#: ../../content/index.rst:49
+msgid "Core::Autoload"
+msgstr ""
+
+#: ../../content/index.rst:52
+msgid "AutoloadPerlPackages###2000-CustomerAgeSwitch"
+msgstr ""
+
+#: ../../content/index.rst:53
+msgid ""
+"Return formatted Create date instead of Age if configured treshold age is"
+" surpassed."
+msgstr ""
+
+#: ../../content/index.rst:56
+msgid "Core::Time"
+msgstr ""
+
+#: ../../content/index.rst:59
+msgid "TimeShowCreatedAt"
+msgstr ""
+
+#: ../../content/index.rst:60
+msgid ""
+"Shows creation date instead of age if ticket is older than configured "
+"value (days)."
+msgstr ""
+
+#: ../../content/index.rst:63
+msgid "About"
+msgstr ""
+
+#: ../../content/index.rst:66
+msgid "Contact"
+msgstr ""
+
+#: ../../content/index.rst:67
+msgid "Rother OSS GmbH"
+msgstr ""
+
+#: ../../content/index.rst:68
+msgid "Email: hello@otobo.io"
+msgstr ""
+
+#: ../../content/index.rst:69
+msgid "Web: https://otobo.io"
+msgstr ""
+
+#: ../../content/index.rst:72
+msgid "Version"
+msgstr ""
+
+#: ../../content/index.rst:73
+msgid ""
+"Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
+"datestamp|"
+msgstr ""
+
