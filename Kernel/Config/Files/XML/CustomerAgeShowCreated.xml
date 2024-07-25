@@ -13,7 +13,7 @@
         </Value>
     </Setting>
     <Setting Name="AutoloadPerlPackages###2000-CustomerAgeSwitch" Required="0" Valid="1">
-        <Description Translatable="1">Remove ticket numbers of all interdivisionally linked tickets when subject is cleaned.</Description>
+        <Description Translatable="1">Return formatted Create date instead of Age if configured treshold age is surpassed.</Description>
         <Navigation>Core::Autoload</Navigation>
         <Value>
             <Array>
