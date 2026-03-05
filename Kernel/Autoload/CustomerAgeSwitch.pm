@@ -1,7 +1,7 @@
 # --
 # OTOBO is a web-based ticketing system for service organisations.
 # --
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -20,7 +20,7 @@ package Kernel::Output::HTML::Layout;    ## no critic (Modules::RequireFilenameM
 use strict;
 use warnings;
 
-use Kernel::Language qw(Translatable);
+use Kernel::Language              qw(Translatable);
 use Kernel::System::VariableCheck qw(IsPositiveInteger);
 
 our @ObjectDependencies = (
@@ -51,6 +51,7 @@ our @ObjectDependencies = (
             $Age     = $1;
             $AgeStrg = '-';
         }
+
 # Rother OSS / CustomerAgeShowCreated
 
         # expected to be an integer number
@@ -80,6 +81,7 @@ our @ObjectDependencies = (
                 }
             }
         }
+
 # EO CustomerAgeShowCreated
 
         # get days
