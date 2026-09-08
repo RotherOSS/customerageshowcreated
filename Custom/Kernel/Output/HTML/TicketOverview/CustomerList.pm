@@ -2,9 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - e44c18aea9abc125fddf9ceeed204db4fab290e0 - Kernel/Output/HTML/TicketOverview/CustomerList.pm
+# $origin: otobo - a5e8ca58b152b109465e1682ce7a07a014bb0e21 - Kernel/Output/HTML/TicketOverview/CustomerList.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -192,7 +192,7 @@ sub Run {
                 $Conf->{ColorSelection} //= {};
                 my $Color = $Conf->{ColorSelection}{ $Ticket{$CatName} } // $Conf->{ColorDefault};
 
-                push @{ $Categories{ $Conf->{Order} } }, {
+                push @{ $Categories{ $Conf->{Order} // 9999 } }, {
                     Text   => $Text,
                     Color  => $Color,
                     Value  => $Ticket{$CatName},
@@ -239,7 +239,6 @@ sub Run {
             my $ValueStrg = $BackendObject->DisplayValueRender(
                 DynamicFieldConfig => $DynamicFieldConfig,
                 Value              => $Value,
-                ValueMaxChars      => 20,
                 LayoutObject       => $LayoutObject,
             );
             next DYNAMICFIELD if ( !defined $ValueStrg->{Value} || $ValueStrg->{Value} eq '' );
@@ -252,7 +251,7 @@ sub Run {
                 $Conf->{ColorSelection} //= {};
                 my $Color = $Conf->{ColorSelection}{ $ValueStrg->{Value} } // $Conf->{ColorDefault};
 
-                push @{ $Categories{ $Conf->{Order} } }, {
+                push @{ $Categories{ $Conf->{Order} // 9999 } }, {
                     Text   => $Text,
                     Color  => $Color,
                     Value  => $ValueStrg->{Value},
