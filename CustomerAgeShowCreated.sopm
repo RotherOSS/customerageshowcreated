@@ -6,7 +6,8 @@
     <Vendor>Rother OSS GmbH</Vendor>
     <URL>https://otobo.io/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
-    <Description Lang="en">The package CustomerAgeShowCreated allows to switch between Age and Created date in customer ticket lists via system configuration.</Description>
+    <Description Lang="en">Allows to switch between age and created date in customer ticket lists via system configuration.</Description>
+    <Description Lang="hu">Lehetővé teszi az ügyfél jegylistáiban az életkor és a létrehozás dátuma közötti váltást a rendszerbeállításokon keresztül.</Description>
     <Filelist>
         <File Permission="660" Location="Custom/Kernel/Modules/CustomerElasticsearchQuickResult.pm" />
         <File Permission="660" Location="Custom/Kernel/Modules/CustomerTicketSearch.pm" />
