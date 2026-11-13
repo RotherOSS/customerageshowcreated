@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CustomerAgeShowCreated\n"
+"POT-Creation-Date: 2026-11-13 19:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. SysConfig
+msgid "30 days"
+msgstr ""
+
+#. SysConfig
+msgid "7 days"
+msgstr ""
+
+#. SysConfig
+msgid "Return formatted creation date instead of age if configured threshold age is surpassed."
+msgstr ""
+
+#. SysConfig
+msgid "Shows creation date instead of age if ticket is older than configured value (days)."
+msgstr ""
+
