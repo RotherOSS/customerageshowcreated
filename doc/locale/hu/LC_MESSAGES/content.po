@@ -1,145 +1,161 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
-# This file is distributed under the same license as the OTOBO
-# CustomerAgeShowCreated Guide package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Hungarian translations for CustomerAgeShowCreated Documentation.
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
+# This file is distributed under the same license as the CustomerAgeShowCreated documentation.
 #
-#, fuzzy
+# Balázs Úr <balazs@urbalazs.hu>, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: OTOBO CustomerAgeShowCreated Guide rel-10.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-24 03:46+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: CustomerAgeShowCreated Documentation 10.1.2\n"
+"Report-Msgid-Bugs-To: https://github.com/RotherOSS/customerageshowcreated/"
+"issues\n"
+"POT-Creation-Date: 2026-11-13 21:04+0100\n"
+"PO-Revision-Date: 2026-11-13 21:15+0100\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
+"Language-Team: Hungarian <https://translate.otobo.org/projects/otobo-10-1/"
+"addons/customerageshowcreated-documentation/hu/>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
-
-#: ../../content/index.rst:16
-msgid "Sacrifice to Sphinx"
-msgstr ""
-
-#: ../../content/index.rst:19
-msgid "Description"
-msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #: ../../content/index.rst:20
-msgid ""
-"The package CustomerAgeShowCreated allows to switch between Age and "
-"Created date in customer ticket lists via system configuration."
-msgstr ""
+msgid "Sacrifice to Sphinx"
+msgstr "Áldozat a Szfinxnek"
 
 #: ../../content/index.rst:23
-msgid "System requirements"
-msgstr ""
+msgid "Description"
+msgstr "Leírás"
 
-#: ../../content/index.rst:26
-msgid "Framework"
+#: ../../content/index.rst:24
+msgid ""
+"Allows to switch between age and created date in customer ticket lists via "
+"system configuration."
 msgstr ""
+"Lehetővé teszi az ügyfél jegylistáiban az életkor és a létrehozás dátuma "
+"közötti váltást a rendszerbeállításokon keresztül."
 
 #: ../../content/index.rst:27
-msgid "OTOBO 10.1.x"
-msgstr ""
+msgid "System requirements"
+msgstr "Rendszerkövetelmények"
 
 #: ../../content/index.rst:30
-msgid "Packages"
-msgstr ""
+msgid "Framework"
+msgstr "Keretrendszer"
 
-#: ../../content/index.rst:31 ../../content/index.rst:35
-msgid "\\-"
-msgstr ""
+#: ../../content/index.rst:31
+msgid "OTOBO 10.1.x"
+msgstr "OTOBO 10.1.x"
 
 #: ../../content/index.rst:34
-msgid "Third-party software"
-msgstr ""
+msgid "Packages"
+msgstr "Csomagok"
+
+#: ../../content/index.rst:35 ../../content/index.rst:39
+msgid "\\-"
+msgstr "\\-"
 
 #: ../../content/index.rst:38
-msgid "Usage"
-msgstr ""
-
-#: ../../content/index.rst:39
-msgid ""
-"When an age treshold value is configured in the system configuration "
-"setting TimeShowCreatedAt, no further action is required. Affected places"
-" in the customer frontend are all ticket overviews, the ticket search as "
-"well as the Elasticsearch quick result popup."
-msgstr ""
+msgid "Third-party software"
+msgstr "Harmadik féltől származó szoftverek"
 
 #: ../../content/index.rst:42
-msgid "Setup"
-msgstr ""
+msgid "Usage"
+msgstr "Használat"
 
 #: ../../content/index.rst:43
 msgid ""
-"The system configuration setting TimeShowCreatedAt can be set to one of "
-"three values (1 day, 2 days, 7 days). The value represents a treshold "
-"age. For example, if the value is set to 1 day and the age of a ticket is"
-" above 1 day, then the age is shown as absolute date instead of time "
-"period."
+"When an age threshold value is configured in the system configuration "
+"setting TimeShowCreatedAt, no further action is required. Affected places in "
+"the customer frontend are all ticket overviews, the ticket search as well as "
+"the Elasticsearch quick result popup."
 msgstr ""
+"Ha életkorküszöbszint-érték van beállítva a „TimeShowCreatedAt” "
+"rendszerbeállítási lehetőségben, akkor nincs szükség további intézkedésre. "
+"Az érintett helyek az ügyfélfelületen az összes jegyáttekintés, a "
+"jegykeresés, valamint az Elasticsearch gyors eredményének felugró ablaka."
 
 #: ../../content/index.rst:46
+msgid "Setup"
+msgstr "Beállítás"
+
+#: ../../content/index.rst:47
+msgid ""
+"The system configuration setting TimeShowCreatedAt can be set to one of for "
+"values (1 day, 2 days, 7 days, 30 days). The value represents a threshold "
+"age. For example, if the value is set to 1 day and the age of a ticket is "
+"above 1 day, then the age is shown as absolute date instead of time period."
+msgstr ""
+"A „TimeShowCreatedAt” rendszerbeállítási lehetőség négy érték egyikére "
+"állítható be (1 nap, 2 nap, 7 nap, 30 nap). Az érték egy küszöbéletkort "
+"jelöl. Például ha az érték 1 napra van beállítva, és egy jegy életkora 1 "
+"napnál nagyobb, akkor az életkor lesz megjelenítve abszolút dátumként az "
+"időtartam helyett."
+
+#: ../../content/index.rst:50
 msgid "Configuration Reference"
-msgstr ""
-
-#: ../../content/index.rst:49
-msgid "Core::Autoload"
-msgstr ""
-
-#: ../../content/index.rst:52
-msgid "AutoloadPerlPackages###2000-CustomerAgeSwitch"
-msgstr ""
+msgstr "Beállítások hivatkozása"
 
 #: ../../content/index.rst:53
-msgid ""
-"Return formatted Create date instead of Age if configured treshold age is"
-" surpassed."
-msgstr ""
+msgid "Core::Autoload"
+msgstr "Core::Autoload"
 
 #: ../../content/index.rst:56
-msgid "Core::Time"
-msgstr ""
+msgid "AutoloadPerlPackages###2000-CustomerAgeSwitch"
+msgstr "AutoloadPerlPackages###2000-CustomerAgeSwitch"
 
-#: ../../content/index.rst:59
-msgid "TimeShowCreatedAt"
+#: ../../content/index.rst:57
+msgid ""
+"Return formatted creation date instead of age if configured threshold age is "
+"surpassed."
 msgstr ""
+"Formázott létrehozási dátum visszaadása az életkor helyett, ha a beállított "
+"küszöbéletkor túllépésre kerül."
 
 #: ../../content/index.rst:60
-msgid ""
-"Shows creation date instead of age if ticket is older than configured "
-"value (days)."
-msgstr ""
+msgid "Core::Time"
+msgstr "Core::Time"
 
 #: ../../content/index.rst:63
-msgid "About"
-msgstr ""
+msgid "TimeShowCreatedAt"
+msgstr "TimeShowCreatedAt"
 
-#: ../../content/index.rst:66
-msgid "Contact"
+#: ../../content/index.rst:64
+msgid ""
+"Shows creation date instead of age if ticket is older than configured value "
+"(days)."
 msgstr ""
+"A létrehozás dátumát jeleníti meg az életkor helyett, ha a jegy régebbi a "
+"beállított értéknél (napok)."
 
 #: ../../content/index.rst:67
+msgid "About"
+msgstr "Névjegy"
+
+#: ../../content/index.rst:70
+msgid "Contact"
+msgstr "Kapcsolat"
+
+#: ../../content/index.rst:71
 msgid "Rother OSS GmbH"
-msgstr ""
-
-#: ../../content/index.rst:68
-msgid "Email: hello@otobo.io"
-msgstr ""
-
-#: ../../content/index.rst:69
-msgid "Web: https://otobo.io"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../../content/index.rst:72
-msgid "Version"
-msgstr ""
+msgid "Email: hello@otobo.io"
+msgstr "E-mail: hello@otobo.io"
 
 #: ../../content/index.rst:73
+msgid "Web: https://otobo.io"
+msgstr "Web: https://otobo.io"
+
+#: ../../content/index.rst:76
+msgid "Version"
+msgstr "Verzió"
+
+#: ../../content/index.rst:77
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
-
+"Szerző: |doc-vendor| / Verzió: |doc-version| / Kiadás dátuma: |doc-datestamp|"
